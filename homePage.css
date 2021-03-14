@@ -133,14 +133,15 @@ div.container div.items-div div{
 
 @media only screen and (max-width: 635px) and (min-width: 428px){
 div.container div.items-div div{
-	margin: auto;
+	margin: 50px auto;
+
 	
 }
 }
 
 @media only screen and (max-width: 918px) and (min-width: 660px){
 div.container div.items-div div{
-	margin: auto;
+	margin: 50px auto;
 
 }
 }
