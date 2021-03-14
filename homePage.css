@@ -64,6 +64,87 @@ div.WA div a{
 	padding: 8px 60px 8px 60px;
 }
 
-div.container div.desk div a{
+div.container div a{
 	margin-top: 50px;
+}
+
+div.desk-div{
+	background-color: #e6e6e6;
+}
+
+div.desk{
+	
+	margin-bottom:150px;
+	border-radius: 10px;
+}
+
+div.desk h1{
+	font-size: 50px;
+	padding: 20px 0 0 0;
+}
+
+/*div.PT{
+	border: 1px solid;
+	background-color: ;
+	height: 400px;
+	margin: 0px 0px 100px 0px;
+}
+
+div.PT div.vl1{
+	border-left: 6px solid black;
+	height: 200px;
+	margin-left: 50%;
+	position: absolute;
+}
+
+div.PT div.vl2{
+	border-left: 6px solid black;
+	height: 200px;
+	margin-left: 50%;
+	position: absolute;
+}
+
+div.PT h2{
+	position: absolute;
+
+}
+
+div.PT h1{
+	font-size: 60px;
+	color: #000;
+	margin: 0 0 0 30px;
+
+}*/
+
+div.items{
+	background-color: ;
+}
+
+div.container div.items-div div{
+	margin-bottom: 100px;
+	margin-left: 80px;
+	width: 300px;
+	height: 300px;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+div.container div.items-div div img{
+	width: 300px;
+	height: 200px;
+}
+
+div.container div.items-div div.col div.new{
+	background-color: red;
+	width: 90px;
+	height: 40px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	position: absolute;
+	margin: -20px 0px 0px 200px;
+}
+
+div.container div.items-div div.col div.new p{
+	color: #fff;
+	font-size: 22px;
 }
