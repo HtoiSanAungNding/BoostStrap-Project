@@ -1,0 +1,69 @@
+body{
+
+}
+
+div.container div.laptop-banner a{
+	padding: 6px 50px 6px 50px;
+
+}
+
+hr.hori{
+	width: 200px;
+	margin: 20px auto;
+
+}
+
+div.container div.card{
+	background-color: #4d4d4d;
+	box-shadow: 30px 20px 8px #888888;
+	margin: 40px 0 150px 0;
+	height: 500px;
+	border-radius: 10px;
+
+}
+
+div.container div.card img{
+
+	margin-left: 100px;
+	height: 550px;
+}
+
+div.container div.card h3{
+	color: #fff;
+	position: absolute;
+	margin-top: 200px;
+  
+}
+
+div.container div.card p{
+	color: #fff;
+	position: absolute;
+	margin-top: 250px;
+
+}
+
+div.container div.card a{
+	position: absolute;
+	margin: 300px 0 0 0px;
+	padding: 6px 50px 6px 50px;
+}
+
+div.WA{
+	background-color: ;
+	margin: 0 0 150px 0;
+}
+
+div.WA h1{
+	font-size: 50px;
+	margin-bottom: 30px;
+
+}
+
+div.WA div a{
+	margin-bottom: 30px;
+	padding: 8px 60px 8px 60px;
+}
+
+div.container div.desk div a{
+	margin-top: 50px;
+}
