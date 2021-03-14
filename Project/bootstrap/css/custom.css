@@ -1,0 +1,18 @@
+@font-face{
+	font-family: font1;
+	src:url(../../fonts/ShipporiMincho-Bold.ttf);
+}
+@font-face{
+	font-family: font2;
+	src:url(../../fonts/BebasNeue-Regular.ttf);
+}
+.font{
+	font-family: font1;
+}
+.logo{
+	width: 50px;
+	height: 50px;
+}
+.logo_text{
+	font-family: font2;
+}
