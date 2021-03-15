@@ -13,7 +13,7 @@
 </head>
 <body class="font">
 
-	<nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-lg">
 		<div class="container">
 			<img src="images/three.png" class="logo">
 			<a href="index.html" class="navbar-brand logo_text me-auto">Revolution</a>
@@ -69,22 +69,31 @@
 
 		</div>
 	</nav>
-        <!-- <header>
-        	<ul class="indicator">
-        		<li><a href="">All</a></li>
-        		<li><a href="">Celeron</a></li>
-        		<li><a href="">Pentium</a></li>
-        		<li><a href="">Core m3</a></li>
-        		<li><a href="">Core i3</a></li>
-        		<li><a href="">Core i3</a></li>
-        		<li><a href="">Core i5</a></li>
-        		<li><a href="">Core i7</a></li>
-        		<li><a href="">Core i9</a></li>
-        	</ul>
-        </header> -->
+      
+       <nav class="navbar navbar-expand-md navbar-light bg-danger shadow-sm">
+		<div class="container">
+			<button class="navbar-toggler" data-bs-target="#Navbar1" data-bs-toggle="collapse">
+				<span class="nav-link dropdown-toggle">Processors</span>
+			</button>
+			<div class="collapse navbar-collapse" id="Navbar1">
+				<ul class="navbar-nav my-1">
+					<li class="nav-item mx-4"><button type="button" class="button btn btn-danger " data-filter="all">All</button></li>
+					<li class="nav-item mx-4"><button type="button" class="button btn btn-danger " data-filter="pentium">Pentium</button></li>
+					<li class="nav-item mx-4"><button type="button" class="button btn btn-danger " data-filter="i3">Core i3</button></li>
+					<li class="nav-item mx-4"><button type="button" class="button btn btn-danger " data-filter="i5">Core i5</button></li>
+					<li class="nav-item mx-4"><button type="button" class="button btn btn-danger " data-filter="i7">Core i7</button></li>
+					<li class="nav-item mx-4"><button type="button" class="button btn btn-danger " data-filter="i9">Core i9</button></li>
+					<li class="nav-item mx-4"><button type="button" class="button btn btn-danger " data-filter="ry3">Ryzen 3</button></li>
+					<li class="nav-item mx-4"><button type="button" class="button btn btn-danger " data-filter="ry5">Ryzen 5</button></li>
+					<li class="nav-item mx-4"><button type="button" class="button btn btn-danger " data-filter="ry7">Ryzen 7</button></li>
+				</ul>
+			</div>			
+		</div>
+	</nav>
+        	
         <div class="container">
             <div class=" row row-cols-1 row-cols-md-4">
-                <div class="col">
+                <div class="itemBox i7 col">
                     <div class="card mb-3 bg-danger my-3" style="box-shadow: 5px 10px;">
                         <div >
                             <img src="images/asus3.png" class="img-fluid w-100" alt="">
@@ -98,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="itemBox i9 col">
                     <div class="card mb-5 bg-danger my-3" style="box-shadow: 5px 10px;">
                         <div>
                             <img src="images/msi3.png" class="img-fluid w-100"alt="">
@@ -112,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="itemBox ry7 col">
                     <div class="card mb-5 bg-danger my-3" style="box-shadow: 5px 10px;">
                         <div >
                             <img src="images/asus4.png" class="img-fluid w-100"alt="">
@@ -126,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="itemBox i3 col">
                     <div class="card mb-5 bg-danger my-3" style="box-shadow: 5px 10px;">
                         <div >
                             <img src="images/acer.png" class="img-fluid w-100"alt="">
@@ -140,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="itemBox i5 col">
                     <div class="card mb-5 bg-danger my-3" style="box-shadow: 5px 10px;">
                         <div >
                             <img src="images/hp.png" class="img-fluid w-100"alt="">
@@ -154,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="itemBox pentium col">
                     <div class="card mb-5 bg-danger my-3 " style="box-shadow: 5px 10px;">
                         <div >
                             <img src="images/hp1.png" class="img-fluid w-100"alt="">
@@ -173,6 +182,21 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="jquery/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.button').click(function(){
+				const value = $(this).attr('data-filter');
+				if (value == 'all') {
+					$('.itemBox').show('100');
+				}
+				else{
+					$('.itemBox').not('.'+value).hide('1000');
+					$('.itemBox').filter('.'+value).show('1000');
+				}
+			})
+		})
+	</script>
 </body>
 </html>
 <div class="modal fade" id="Modal">
