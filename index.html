@@ -9,11 +9,40 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<style type="text/css">
+		.swiper-container {
+background-color: #000;
+   width: 100%;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.swiper-slide {
+   background-position: center;
+   background-size: cover;
+   width: 300px;
+   height: 300px;
+
+}
+.swiper-wrapper img
+{
+   width: 100%;
+   -webkit-box-reflect: below 1px linear-gradient(transparent,transparent, #0005);
+}
+.id_slider
+{
+   color: #fff;
+   font-size: 20px;
+}
+	</style>
+</head>
 <body class="font">
 
 	<nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
 		<div class="container">
-			<img src="images/three.png" class="logo">
+			<img src="images/three.png" class="logo me-2">
 			<a href="" class="navbar-brand logo_text me-auto">Revolution</a>
 
 			<button class="navbar-toggler" data-bs-target="#Navbar" data-bs-toggle="collapse">
@@ -39,11 +68,7 @@
 
 			          	<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 			            	<li><a class="dropdown-item" href="forhome.html">For Home</a></li>
-			            	<li><a class="dropdown-item" href="forwork.html">For Work</a></li>
-			            	<li><a class="dropdown-item" href="forstudent.html">For Students</a></li>
-			            	<li><a class="dropdown-item" href="forgaming.html">For Gaming</a></li>
-			            	<li><a class="dropdown-item" href="forcreator.html">For Creators</a></li>
-			            	<li><a class="dropdown-item" href="laptopacc.html">Accessories</a></li>
+			            	<li><a class="dropdown-item" href="forgaming.html">For Gamming</a></li>
 			          	</ul>
 			        </li>
 					<li class="nav-item dropdown mx-2">
@@ -52,39 +77,223 @@
 			          	<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 			            	<li><a class="dropdown-item" href="monitor.html">Monitors</a></li>
 			            	<li><a class="dropdown-item" href="projector.html">Projectors</a></li>
-			            	<li><a class="dropdown-item" href="displayacc.html">Accessories</a></li>
-			          	</ul>
-			        </li>
-					<li class="nav-item dropdown mx-2">
-			        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accessories</a>
-
-			          	<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			            	<li><a class="dropdown-item" href="keyboard.html">Keyboards</a></li>
-			            	<li><a class="dropdown-item" href="mouse.html">Mice and Mouse Pads</a></li>
-			            	<li><a class="dropdown-item" href="headset.html">Headsets and Audio</a></li>
-			            	<li><a class="dropdown-item" href="case.html">Cases and Protection</a></li>
-			            	<li><a class="dropdown-item" href="adapter.html">Adapters and Chargers</a></li>
-			            	<li><a class="dropdown-item" href="powerbank.html">Power Banks</a></li>
 			          	</ul>
 			        </li>
 					<li class="nav-item mx-2">
-						<a href="" class="nav-link">About</a>
+						<a href="accessories.html" class="nav-link">Accessories</a>
 					</li>
 					<li class="nav-item mx-2">
-						<a href="" class="nav-link">Services</a>
+						<a href="about.html" class="nav-link">About</a>
 					</li>
 					<li class="nav-item mx-2">
-						<a href="" class="nav-link">Contact</a>
+						<a href="service.html" class="nav-link">Services</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a href="contact.html" class="nav-link">Contact</a>
 					</li>
 				</ul>
 			</div>
 
 		</div>
 	</nav>
+	<div class="container banner" id="container1">
+		<div class="row row-cols-1 row-cols-md-2 my-3">
+			<div class="col">
+				<img src="images/laptop.png" width="400" height="200" class="img-fluid">
+			</div>
 
+			<div class="col text-dark py-3 laptop-banner">
+				<h2>MSI
+				</h2>
+				<p class="my-3 px-5">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodid est laborum.
+				</p>
+				<div class="text-center py-3">
+					<a href="" class="btn btn-outline-dark btn-lg text-center">Explore</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr class="hori">
+
+	<div class="container"  id="container1">
+
+		<div class="row row-cols-1">
+			<div class="col card ">
+				<h3>MSI Gaming laptop</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+				<a href="" class="btn btn-outline-light btn-lg">Explore</a>
+				<img src="images/laptop.png" class="img-fluid">
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="hori">
+
+	<div class="WA">
+		<h1 class="text-center">Wearable and Accessories</h1>
+		
+		<div class="text-center ">
+			<a href="" class="btn btn-outline-dark ">Explore</a><br>
+			<img src="images/wearable.png" class="img-fluid" width="500px" height="300px">
+					
+		</div>
+	</div>
+
+	<hr class="hori">
+
+	<div class="desk-div">
+		<div class="container desk">
+
+			<h1 class="text-center">Desktops</h1>
+			
+			<div class="row row-cols-3 text-center">
+				<div class="col">
+					
+					<a href="" class="btn btn-outline-dark">For Home</a>
+				</div>
+
+				<div class="col">
+					<img src="images/monitor.png" class="img-fluid" width="500px" height="300px">
+				</div>
+
+				<div class="col">
+					<a href="" class="btn btn-outline-dark">For Business</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container items"  id="container1">
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 text-center items-div">
+			<div class="col ">
+				<div class="new"><p>New</p></div>
+				<img src="images/macbook.png" class="img-fluid">
+				<h3>MacBook</h3>
+			</div>
+
+			<div class="col ">
+				<div class="new"><p>New</p></div>
+				<img src="images/imac.png" class="img-fluid">
+				<h3>iMac</h3>
+			</div>
+
+			<div class="col">
+				<div class="new"><p>New</p></div>
+				<img src="images/monitor.png" class="img-fluid py-3">
+				<h3>Monitor</h3>
+			</div>			
+		</div>
+	</div>
+
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/brandlogo.jpg"></div>
+      <div class="swiper-slide"><img src="images/brandlogo1.jpg"></div>
+      <div class="swiper-slide"><img src="images/brandlogo2.jpg"></div>
+      <div class="swiper-slide"><img src="images/brandlogo3.jpg"></div>
+      <div class="swiper-slide"><img src="images/brandlogo4.jpg"></div>
+      <div class="swiper-slide"><img src="images/brandlogo7.jpg"></div>
+      <div class="swiper-slide"><img src="images/brandlogo8.jpg"></div>
+      <div class="swiper-slide"><img src="images/brandlogo9.jpg"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next id_slider"></div>
+    <div class="swiper-button-prev id_slider"></div>
+  </div>
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+   var swiper = new Swiper('.swiper-container', 
+   {
+     effect: 'coverflow',
+     grabCursor: true,
+     centeredSlides: true,
+     slidesPerView: 'auto',
+     coverflowEffect: {
+       rotate: 20,
+       stretch: 0,
+       depth: 200,
+       modifier: 1,
+       slideShadows: true,
+     },
+     loop:true,
+     autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+   });
+ </script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="jquery/jquery.min.js"></script>
-</head>
 </body>
+<footer class="footer">
+    <div  class="p-3 mb-2 bg-dark text-white">
+        <div class="row p-3">
+            <div class="col-lg-4 text-lg-left">
+                <h2>Be Future-Ready</h2>
+                <p>Get exchange digital marketing updates</p>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid p-0">
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                      </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-2 text-lg-left">
+                <h3>About</h3>
+                <a class="nav-link text-secondary p-0"href="">Our Team</a>
+                <a class="nav-link text-secondary p-0"href="">Our Team</a>
+                <a class="nav-link text-secondary p-0"href="">Our Team</a>
+            </div>
+            <div class="col-lg-3 text-lg-left">
+                <h3>Corporate Trainning</h3>
+                <a class="nav-link text-secondary p-0"href="">Leader</a>
+                <a class="nav-link text-secondary p-0"href="">Member</a>
+            </div>
+            <div class="col-lg-3 text-lg-left">
+                <h3>Contact Us</h3>
+                <a class="nav-link text-secondary p-0"href=""><i class="fas fa-phone-alt mx-2"></i>+959556677833</a>
+                <a class="nav-link text-secondary p-0"href=""><i class="fas fa-envelope-open-text mx-2"></i>3Revolution@company.com</a>
+                <a class="nav-link text-secondary p-0"href=""><i class="fas fa-map-marker-alt mx-2"></i>Yangon</a>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020
+            </div>
+            <div class="col-lg-4 my-5 text-center my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="#!">
+                    <i class="fab fa-facebook fa-lg"></i>
+                </a>
+                <a class="btn btn-dark btn-social mx-2" href="#!">
+                    <i class="fab fa-facebook-messenger fa-lg"></i>
+                </a>
+                <a class="btn btn-dark btn-social mx-2" href="#!">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+            </div>
+            <div class="col-lg-4 float-end text-lg-right">
+                <a class="float-end ms-5 nav-link text-white" href="#!">Privacy Policy</a>
+                <a class="float-end ms-5 nav-link text-white" href="#!">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>  
 </html>
